@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:teensy_audio_player_kicad-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -15,18 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L teensy_library:Teensy3.6 U1
-U 1 1 5E3F3190
-P 3300 3550
-F 0 "U1" H 3300 5987 60  0000 C CNN
-F 1 "Teensy3.6" H 3300 5881 60  0000 C CNN
-F 2 "teensy_audio_player_kicad:Teensy35_36" H 3300 3600 60  0001 C CNN
-F 3 "" H 3300 3600 60  0000 C CNN
-	1    3300 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS373 U2
+L teensy_audio_player_kicad-rescue:74LS373-74xx U2
 U 1 1 5E3FBD03
 P 6800 2050
 F 0 "U2" H 6800 3031 50  0000 C CNN
@@ -37,7 +25,7 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS373" H 6800 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR07
+L teensy_audio_player_kicad-rescue:GND-power #PWR07
 U 1 1 5E3FCF07
 P 6800 3050
 F 0 "#PWR07" H 6800 2800 50  0001 C CNN
@@ -55,7 +43,7 @@ Connection ~ 6800 3000
 Wire Wire Line
 	6800 3000 6800 3050
 $Comp
-L power:VCC #PWR06
+L teensy_audio_player_kicad-rescue:VCC-power #PWR06
 U 1 1 5E401A38
 P 6800 900
 F 0 "#PWR06" H 6800 750 50  0001 C CNN
@@ -77,7 +65,7 @@ Connection ~ 6800 1050
 Wire Wire Line
 	6800 1050 6800 900 
 $Comp
-L Connector_Generic:Conn_02x13_Odd_Even J1
+L teensy_audio_player_kicad-rescue:Conn_02x13_Odd_Even-Connector_Generic J1
 U 1 1 5E406242
 P 8000 1350
 F 0 "J1" H 8050 2167 50  0000 C CNN
@@ -110,32 +98,22 @@ Wire Wire Line
 Wire Wire Line
 	8400 1950 8300 1950
 Wire Wire Line
-	1050 5300 1050 700 
-Wire Wire Line
-	950  5400 950  600 
-Wire Wire Line
-	5200 1950 6300 1950
-Wire Wire Line
 	5300 1850 6300 1850
-Wire Wire Line
-	5400 1750 6300 1750
 Wire Wire Line
 	5500 1650 6300 1650
 Wire Wire Line
 	5600 1550 5600 800 
 Wire Wire Line
 	5600 1550 6300 1550
-Wire Wire Line
-	4800 4900 4450 4900
 $Comp
-L power:+3V3 #PWR05
+L teensy_audio_player_kicad-rescue:+3V3-power #PWR05
 U 1 1 5E47B739
-P 5400 5100
-F 0 "#PWR05" H 5400 4950 50  0001 C CNN
-F 1 "+3V3" H 5415 5273 50  0000 C CNN
-F 2 "" H 5400 5100 50  0001 C CNN
-F 3 "" H 5400 5100 50  0001 C CNN
-	1    5400 5100
+P 2200 6850
+F 0 "#PWR05" H 2200 6700 50  0001 C CNN
+F 1 "+3V3" H 2215 7023 50  0000 C CNN
+F 2 "" H 2200 6850 50  0001 C CNN
+F 3 "" H 2200 6850 50  0001 C CNN
+	1    2200 6850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -158,7 +136,7 @@ Wire Wire Line
 	6200 2050 6200 2150
 Connection ~ 6200 2150
 $Comp
-L power:GND #PWR0101
+L teensy_audio_player_kicad-rescue:GND-power #PWR0101
 U 1 1 5E499CAE
 P 8500 2200
 F 0 "#PWR0101" H 8500 1950 50  0001 C CNN
@@ -238,21 +216,19 @@ F 3 "" H 6500 5100 50  0001 C CNN
 	1    6500 4700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4800 4800 4800 4900
 $Comp
-L power:VCC #PWR04
+L teensy_audio_player_kicad-rescue:VCC-power #PWR04
 U 1 1 5E478EE3
-P 4800 4800
-F 0 "#PWR04" H 4800 4650 50  0001 C CNN
-F 1 "VCC" H 4817 4973 50  0000 C CNN
-F 2 "" H 4800 4800 50  0001 C CNN
-F 3 "" H 4800 4800 50  0001 C CNN
-	1    4800 4800
+P 4550 1300
+F 0 "#PWR04" H 4550 1150 50  0001 C CNN
+F 1 "VCC" H 4567 1473 50  0000 C CNN
+F 2 "" H 4550 1300 50  0001 C CNN
+F 3 "" H 4550 1300 50  0001 C CNN
+	1    4550 1300
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR0102
+L teensy_audio_player_kicad-rescue:+3V3-power #PWR0102
 U 1 1 5E5BBC52
 P 5800 4500
 F 0 "#PWR0102" H 5800 4350 50  0001 C CNN
@@ -263,7 +239,7 @@ F 3 "" H 5800 4500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0103
+L teensy_audio_player_kicad-rescue:GND-power #PWR0103
 U 1 1 5E5C125E
 P 5800 4600
 F 0 "#PWR0103" H 5800 4350 50  0001 C CNN
@@ -277,22 +253,8 @@ Wire Wire Line
 	6200 4500 5800 4500
 Wire Wire Line
 	5800 4600 6200 4600
-Wire Wire Line
-	6200 4700 5900 4700
-Wire Wire Line
-	5900 4700 5900 5200
-Wire Wire Line
-	5900 5200 4450 5200
-Wire Wire Line
-	4450 5300 6000 5300
-Wire Wire Line
-	6000 5300 6000 4800
-Wire Wire Line
-	6000 4800 6200 4800
-Wire Wire Line
-	6100 4900 6200 4900
 $Comp
-L Connector:Conn_01x03_Female J2
+L teensy_audio_player_kicad-rescue:Conn_01x03_Female-Connector J2
 U 1 1 5E5EE44D
 P 10250 3800
 F 0 "J2" H 10278 3826 50  0000 L CNN
@@ -303,7 +265,7 @@ F 3 "~" H 10250 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR0104
+L teensy_audio_player_kicad-rescue:VCC-power #PWR0104
 U 1 1 5E5EF6DB
 P 9950 3600
 F 0 "#PWR0104" H 9950 3450 50  0001 C CNN
@@ -314,7 +276,7 @@ F 3 "" H 9950 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0105
+L teensy_audio_player_kicad-rescue:GND-power #PWR0105
 U 1 1 5E5EFC44
 P 9950 4000
 F 0 "#PWR0105" H 9950 3750 50  0001 C CNN
@@ -333,51 +295,18 @@ Wire Wire Line
 Wire Wire Line
 	9950 3900 10050 3900
 $Comp
-L Device:R R1
+L teensy_audio_player_kicad-rescue:R-Device R1
 U 1 1 5E626A58
-P 2600 7250
-F 0 "R1" V 2393 7250 50  0000 C CNN
-F 1 "R" V 2484 7250 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 2530 7250 50  0001 C CNN
-F 3 "~" H 2600 7250 50  0001 C CNN
-	1    2600 7250
-	1    0    0    -1  
+P 2450 6850
+F 0 "R1" V 2243 6850 50  0000 C CNN
+F 1 "R" V 2334 6850 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2380 6850 50  0001 C CNN
+F 3 "~" H 2450 6850 50  0001 C CNN
+	1    2450 6850
+	0    -1   -1   0   
 $EndComp
-Connection ~ 5400 5100
-Wire Wire Line
-	6100 4900 6100 7550
-Wire Wire Line
-	650  2400 650  7550
-Wire Wire Line
-	2750 6950 2600 6950
-Wire Wire Line
-	2600 6950 2600 7100
-Wire Wire Line
-	5400 5100 5400 7400
-Wire Wire Line
-	4450 5100 5400 5100
-Wire Wire Line
-	2600 7400 5400 7400
-Wire Wire Line
-	850  4000 850  5200
-Wire Wire Line
-	850  5200 850  5300
-Connection ~ 850  5200
 $Comp
-L power:GND #PWR01
-U 1 1 5E472A5B
-P 850 5300
-F 0 "#PWR01" H 850 5050 50  0001 C CNN
-F 1 "GND" H 855 5127 50  0000 C CNN
-F 2 "" H 850 5300 50  0001 C CNN
-F 3 "" H 850 5300 50  0001 C CNN
-	1    850  5300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	650  7550 6100 7550
-$Comp
-L Connector:Conn_01x09_Male J3
+L teensy_audio_player_kicad-rescue:Conn_01x09_Male-Connector J3
 U 1 1 5E6189FE
 P 3150 7150
 F 0 "J3" V 3077 7128 50  0000 C CNN
@@ -388,7 +317,7 @@ F 3 "~" H 3150 7150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:CP1 C1
+L teensy_audio_player_kicad-rescue:CP1-Device C1
 U 1 1 5E7A787F
 P 9100 3800
 F 0 "C1" H 9215 3846 50  0000 L CNN
@@ -399,7 +328,7 @@ F 3 "~" H 9100 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR0106
+L teensy_audio_player_kicad-rescue:+3V3-power #PWR0106
 U 1 1 5E7D6A45
 P 9100 3650
 F 0 "#PWR0106" H 9100 3500 50  0001 C CNN
@@ -410,7 +339,7 @@ F 3 "" H 9100 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0107
+L teensy_audio_player_kicad-rescue:GND-power #PWR0107
 U 1 1 5E7EE103
 P 9100 3950
 F 0 "#PWR0107" H 9100 3700 50  0001 C CNN
@@ -421,7 +350,7 @@ F 3 "" H 9100 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R2
+L teensy_audio_player_kicad-rescue:R-Device R2
 U 1 1 5E81DD65
 P 7800 2400
 F 0 "R2" H 7870 2446 50  0000 L CNN
@@ -432,7 +361,7 @@ F 3 "~" H 7800 2400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_BJT:2N3904 Q1
+L teensy_audio_player_kicad-rescue:2N3904-Transistor_BJT Q1
 U 1 1 5E81E7D6
 P 7800 2900
 F 0 "Q1" H 7990 2946 50  0000 L CNN
@@ -443,7 +372,7 @@ F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 7800 2900 50  000
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R3
+L teensy_audio_player_kicad-rescue:R-Device R3
 U 1 1 5E81EED7
 P 8300 3000
 F 0 "R3" H 8370 3046 50  0000 L CNN
@@ -460,7 +389,7 @@ Wire Wire Line
 Wire Wire Line
 	7600 3000 6800 3000
 $Comp
-L power:+3V3 #PWR0108
+L teensy_audio_player_kicad-rescue:+3V3-power #PWR0108
 U 1 1 5E850F68
 P 8650 2900
 F 0 "#PWR0108" H 8650 2750 50  0001 C CNN
@@ -485,13 +414,11 @@ Wire Wire Line
 Wire Wire Line
 	2150 1400 2050 1400
 Wire Wire Line
-	1850 2100 1850 1000
-Wire Wire Line
 	1750 2500 1750 900 
 Wire Wire Line
 	1650 2600 1650 800 
 $Comp
-L power:GND #PWR03
+L teensy_audio_player_kicad-rescue:GND-power #PWR03
 U 1 1 5E46E5A1
 P 2050 1450
 F 0 "#PWR03" H 2050 1200 50  0001 C CNN
@@ -502,19 +429,11 @@ F 3 "" H 2050 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5400 700  5400 1750
-Wire Wire Line
-	5200 600  5200 1950
-Wire Wire Line
 	5300 900  1750 900 
 Wire Wire Line
 	1850 1000 5500 1000
 Wire Wire Line
 	1650 800  5600 800 
-Wire Wire Line
-	1850 2100 2150 2100
-Wire Wire Line
-	650  2400 2150 2400
 Wire Wire Line
 	1750 2500 2150 2500
 Wire Wire Line
@@ -524,68 +443,24 @@ Wire Wire Line
 Wire Wire Line
 	1950 2000 1950 1100
 Wire Wire Line
-	1950 1100 5100 1100
+	1950 1100 5200 1100
 Wire Wire Line
-	5100 1100 5100 3450
+	5200 1100 5200 3450
 Wire Wire Line
-	5100 3450 8100 3450
+	5200 3450 8100 3450
 Wire Wire Line
 	8100 3450 8100 3000
 Connection ~ 8100 3000
 Wire Wire Line
 	8100 3000 8000 3000
 Wire Wire Line
-	2150 4900 2050 4900
-Wire Wire Line
-	2050 4900 2050 5900
-Wire Wire Line
-	2050 5900 3350 5900
-Wire Wire Line
-	3350 5900 3350 6950
-Wire Wire Line
-	2150 4800 1950 4800
-Wire Wire Line
-	1950 4800 1950 6000
-Wire Wire Line
-	1950 6000 3450 6000
-Wire Wire Line
-	3450 6000 3450 6950
-Wire Wire Line
-	2150 4700 1850 4700
-Wire Wire Line
-	1850 4700 1850 6100
-Wire Wire Line
-	1850 6100 3550 6100
-Wire Wire Line
-	3550 6100 3550 6950
-Wire Wire Line
-	850  5200 2150 5200
-Wire Wire Line
-	1050 5300 2150 5300
-Wire Wire Line
-	950  5400 2150 5400
-Wire Wire Line
-	850  4000 2150 4000
-Wire Wire Line
-	1050 700  5400 700 
-Wire Wire Line
-	950  600  5200 600 
-Wire Wire Line
 	2150 3300 1750 3300
 Wire Wire Line
 	1750 3300 1750 6200
 Wire Wire Line
-	1750 6200 3250 6200
-Wire Wire Line
-	3250 6200 3250 6950
-Wire Wire Line
 	2150 3200 1650 3200
 Wire Wire Line
 	1650 3200 1650 6300
-Wire Wire Line
-	1650 6300 3150 6300
-Wire Wire Line
-	3150 6300 3150 6950
 Wire Wire Line
 	2150 3100 1550 3100
 Wire Wire Line
@@ -610,4 +485,199 @@ Wire Wire Line
 	1350 6600 2850 6600
 Wire Wire Line
 	2850 6600 2850 6950
+Wire Wire Line
+	3450 6200 3450 6950
+Wire Wire Line
+	1750 6200 3450 6200
+Wire Wire Line
+	3250 6300 3250 6950
+Wire Wire Line
+	1650 6300 3250 6300
+$Comp
+L teensy_library:Teensy4.1 U1
+U 1 1 604218A1
+P 3250 3550
+F 0 "U1" H 3250 6115 50  0000 C CNN
+F 1 "Teensy4.1" H 3250 6024 50  0000 C CNN
+F 2 "teensy_audio_player_kicad:Teensy41" H 2850 3950 50  0001 C CNN
+F 3 "" H 2850 3950 50  0001 C CNN
+	1    3250 3550
+	1    0    0    -1  
+$EndComp
+Text Label 5700 1550 0    50   ~ 0
+MOSI
+Text Label 5700 1650 0    50   ~ 0
+CMD_DATA
+Text Label 5700 1850 0    50   ~ 0
+CS
+Text Label 5700 1950 0    50   ~ 0
+RST
+Text Label 2850 6900 1    50   ~ 0
+24
+Text Label 2950 6900 1    50   ~ 0
+25
+Text Label 3050 6900 1    50   ~ 0
+26
+Text Label 3150 6900 1    50   ~ 0
+39
+Text Label 3250 6900 1    50   ~ 0
+27
+Text Label 3350 6900 1    50   ~ 0
+38
+Text Label 3450 6900 1    50   ~ 0
+28
+Text Label 3550 6900 1    50   ~ 0
+37
+Wire Wire Line
+	1850 2700 2150 2700
+Wire Wire Line
+	1850 1000 1850 2700
+Text Label 5700 1750 0    50   ~ 0
+SCK
+Wire Wire Line
+	6300 1750 5400 1750
+Wire Wire Line
+	5400 1750 5400 2700
+Wire Wire Line
+	5400 2700 4350 2700
+Wire Wire Line
+	6300 1950 5300 1950
+Wire Wire Line
+	5300 1950 5300 2600
+Wire Wire Line
+	5300 2600 4350 2600
+Wire Wire Line
+	2750 6950 2750 6850
+Wire Wire Line
+	2750 6850 2600 6850
+Wire Wire Line
+	2300 6850 2200 6850
+Wire Wire Line
+	3150 6950 3150 5000
+Wire Wire Line
+	3150 5000 4450 5000
+Wire Wire Line
+	4450 3100 4450 5000
+Wire Wire Line
+	4450 3100 4350 3100
+Wire Wire Line
+	3350 6950 3350 5100
+Wire Wire Line
+	3350 5100 4550 5100
+Wire Wire Line
+	4550 5100 4550 3200
+Wire Wire Line
+	4550 3200 4350 3200
+Wire Wire Line
+	3550 6950 3550 5200
+Wire Wire Line
+	3550 5200 4650 5200
+Wire Wire Line
+	4650 5200 4650 3300
+Wire Wire Line
+	4650 3300 4350 3300
+Wire Wire Line
+	2150 2200 1050 2200
+Wire Wire Line
+	1050 2200 1050 7450
+Wire Wire Line
+	1050 7450 5150 7450
+Wire Wire Line
+	5150 7450 5150 4800
+Wire Wire Line
+	5150 4800 6200 4800
+Wire Wire Line
+	4350 1900 4900 1900
+Wire Wire Line
+	4900 1900 4900 4900
+Wire Wire Line
+	4900 4900 6200 4900
+Wire Wire Line
+	6200 4700 4800 4700
+Wire Wire Line
+	4800 4700 4800 2000
+Wire Wire Line
+	4800 2000 4350 2000
+Wire Wire Line
+	4350 1600 4450 1600
+$Comp
+L teensy_audio_player_kicad-rescue:GND-power #PWR01
+U 1 1 5E472A5B
+P 4600 1500
+F 0 "#PWR01" H 4600 1250 50  0001 C CNN
+F 1 "GND" H 4605 1327 50  0000 C CNN
+F 2 "" H 4600 1500 50  0001 C CNN
+F 3 "" H 4600 1500 50  0001 C CNN
+	1    4600 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L teensy_audio_player_kicad-rescue:R-Device R4
+U 1 1 60630B4B
+P 4900 1300
+F 0 "R4" V 4693 1300 50  0000 C CNN
+F 1 "R-Device" V 4784 1300 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4830 1300 50  0001 C CNN
+F 3 "" H 4900 1300 50  0001 C CNN
+	1    4900 1300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4350 1400 4550 1400
+Wire Wire Line
+	4550 1400 4550 1300
+Wire Wire Line
+	4750 1300 4550 1300
+Connection ~ 4550 1300
+Wire Wire Line
+	5050 1300 5100 1300
+Wire Wire Line
+	4600 1500 4350 1500
+$Comp
+L teensy_audio_player_kicad-rescue:R-Device R5
+U 1 1 606CFC4A
+P 4900 1500
+F 0 "R5" V 4693 1500 50  0000 C CNN
+F 1 "R-Device" V 4784 1500 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4830 1500 50  0001 C CNN
+F 3 "" H 4900 1500 50  0001 C CNN
+	1    4900 1500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4750 1500 4600 1500
+Connection ~ 4600 1500
+Wire Wire Line
+	5100 1500 5050 1500
+Wire Wire Line
+	5100 1300 5100 1500
+Wire Wire Line
+	5100 1500 5100 1800
+Wire Wire Line
+	5100 1800 4350 1800
+Connection ~ 5100 1500
+$Comp
+L teensy_audio_player_kicad-rescue:GND-power #PWR0109
+U 1 1 606E6350
+P 4650 2800
+F 0 "#PWR0109" H 4650 2550 50  0001 C CNN
+F 1 "GND" H 4655 2627 50  0000 C CNN
+F 2 "" H 4650 2800 50  0001 C CNN
+F 3 "" H 4650 2800 50  0001 C CNN
+	1    4650 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 2800 4350 2800
+$Comp
+L teensy_audio_player_kicad-rescue:+3V3-power #PWR0111
+U 1 1 6070B475
+P 4450 1600
+F 0 "#PWR0111" H 4450 1450 50  0001 C CNN
+F 1 "+3V3" H 4465 1773 50  0000 C CNN
+F 2 "" H 4450 1600 50  0001 C CNN
+F 3 "" H 4450 1600 50  0001 C CNN
+	1    4450 1600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

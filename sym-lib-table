@@ -1,3 +1,5 @@
 (sym_lib_table
   (lib (name teensy_audio_player_library)(type Legacy)(uri ${KIPRJMOD}/teensy_audio_player_library.lib)(options "")(descr ""))
+  (lib (name teensy_audio_player_kicad-rescue)(type Legacy)(uri ${KIPRJMOD}/teensy_audio_player_kicad-rescue.lib)(options "")(descr ""))
+  (lib (name teensy_library)(type Legacy)(uri C:/Users/Jason/Documents/github/teensy_library/teensy.lib)(options "")(descr ""))
 )

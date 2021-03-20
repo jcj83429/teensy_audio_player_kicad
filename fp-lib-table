@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name teensy_audio_player_kicad)(type KiCad)(uri ${KIPRJMOD}/teensy_audio_player_kicad.pretty)(options "")(descr ""))
+  (lib (name teensy)(type KiCad)(uri C:/Users/Jason/Documents/github/teensy.pretty)(options "")(descr ""))
 )
